@@ -1,0 +1,134 @@
+/*---- Universal Selectors ----*/
+* {
+    box-sizing: border-box;
+}
+
+/*---- Element Selectors ----*/
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    background-color: #d6d6d6;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/*---- Navigation ----*/
+.name a,
+.main-nav a,
+.banner,
+.col,
+.contact,
+.skills,
+.main-footer {
+    width: 90%;
+    margin: auto;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+}
+
+.main-nav a {
+    background-color: white;
+    padding: 8px 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.banner p {
+    padding-bottom: 25px;
+}
+
+.profile-image {
+    width: 75%;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+.col {
+    margin-bottom: 25px;
+}
+
+.contact,
+.skills {
+    margin-bottom: 30px;
+}
+
+.contact p,
+.skills p {
+    margin-top: 0;
+}
+
+.skills li{
+    display: inline-block;
+    background-color: white ;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.main-footer {
+    border-top: 1px solid goldenrod;
+}
+
+.footer-name {
+    float: left;
+}
+
+footer a,
+h4 {
+    float: right;
+    margin-top: 21.280px;
+    font-weight: bold;
+}
+
+/* ================================= 
+  Clearfix
+==================================== */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
