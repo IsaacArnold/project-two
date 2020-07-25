@@ -173,6 +173,7 @@ h4 {
     .col {
         float: left;
         width: 50%;
+        max-height: 378px;
     }
 
     .col p {
