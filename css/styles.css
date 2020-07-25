@@ -141,7 +141,8 @@ h4 {
 @media (min-width: 768px) {
 
     .main-nav {
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 25px;
     }
 
     .main-nav li {
@@ -173,7 +174,7 @@ h4 {
     .col {
         float: left;
         width: 50%;
-        max-height: 378px;
+        height: 378px;
     }
 
     .col p {
