@@ -21,12 +21,17 @@ a {
     color: black;
 }
 
+a:hover {
+    color: #263753;
+}
+
 h2 {
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 0;
     text-transform: uppercase;
     font-size: 1.2em;
+    color: goldenrod;
 }
 
 h3 {
@@ -42,13 +47,7 @@ img {
   Base Layout Styles
 ==================================== */
 
-.name a,
-.main-nav a,
-.banner,
-.col,
-.contact,
-.skills,
-.main-footer {
+.content {
     width: 90%;
     margin: auto;
 }
@@ -57,16 +56,19 @@ img {
     font-size: 2em;
 }
 
-.name a,
 .main-nav a {
     display: block;
-}
-
-.main-nav a {
+    width: 90%;
+    margin: auto;
     background-color: white;
     padding: 8px 0;
     margin-bottom: 5px;
     text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    background-color: #263753;
+    color: white;
 }
 
 .banner p {
@@ -76,7 +78,7 @@ img {
 .profile-image {
     width: 75%;
     margin-top: 30px;
-    max-width: 100%;
+    max-width: 400px;
 }
 
 .container {
@@ -87,6 +89,8 @@ img {
 
 .col {
     margin-bottom: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .contact,
@@ -120,6 +124,114 @@ h4 {
     float: right;
     margin-top: 21.280px;
     font-weight: bold;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .footer-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .main-nav {
+        margin-bottom: 30px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .main-nav a {
+        background-color: initial;
+        width: 100%;
+    }
+
+    .main-nav a:hover {
+        background-color: initial;
+        color: #263753;
+    }
+
+    .profile-image {
+        float: right;
+        margin: auto;
+        margin-left: 15px;
+        width: 45%;
+    }
+
+    .banner p {
+        text-align: left;
+    }
+
+    .col {
+        float: left;
+        width: 50%;
+    }
+
+    .col p {
+        padding: 0 30px;
+    }
+
+    .skills p,
+    .contact p {
+        max-width: 50ch;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        float: right;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .header-wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner p {
+        max-width: 60ch;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .name a,
+    .main-nav li {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .col {
+        width: 33%;
+    }
+
+
 }
 
 /* ================================= 
